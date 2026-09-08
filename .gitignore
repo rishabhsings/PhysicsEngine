@@ -1,0 +1,14 @@
+.vercel
+.venv
+.pytest_cache
+__pycache__/
+**/__pycache__/
+frontend/node_modules/
+frontend/.next/
+frontend/test-results/
+tests/
+docs/
+scripts/
+delhi_training_data.csv
+openaq_calibration_summary.csv
+.env

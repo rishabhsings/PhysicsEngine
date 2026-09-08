@@ -1,0 +1,14 @@
+cachetools
+fastapi
+uvicorn
+earthengine-api
+python-dotenv
+scikit-learn
+shapely
+pyproj
+pandas
+numpy
+pytest
+httpx
+xgboost
+joblib

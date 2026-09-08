@@ -1,0 +1,12 @@
+{
+  "city_name": "Delhi",
+  "timezone": "Asia/Calcutta",
+  "train_start": "2023-01-01",
+  "train_end": "2024-12-31",
+  "validation_strategy": "spatial_temporal_holdout",
+  "target_variable": "surface_temperature_c",
+  "candidate_models": [
+    "regularized_linear_regression",
+    "gradient_boosted_trees"
+  ]
+}

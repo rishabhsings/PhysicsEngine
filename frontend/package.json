@@ -1,0 +1,44 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test:unit": "node src/lib/planning-utils.test.js",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@deck.gl/core": "^9.3.0",
+    "@deck.gl/geo-layers": "^9.3.0",
+    "@deck.gl/layers": "^9.3.0",
+    "@deck.gl/mapbox": "^9.3.0",
+    "@deck.gl/react": "^9.3.0",
+    "@mapbox/mapbox-gl-draw": "^1.5.1",
+    "@turf/area": "^7.3.4",
+    "@turf/center": "^7.4.0",
+    "@types/geojson": "^7946.0.16",
+    "@types/mapbox__mapbox-gl-draw": "^1.4.9",
+    "@types/suncalc": "^1.9.2",
+    "mapbox-gl": "^3.21.0",
+    "next": "16.2.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-map-gl": "^8.1.1",
+    "suncalc": "^1.9.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@tailwindcss/postcss": "^4",
+    "@types/mapbox-gl": "^3.4.1",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

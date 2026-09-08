@@ -1,0 +1,26 @@
+{
+  "selected_model": "gradient_boosting",
+  "metrics": {
+    "mae": 6.4854042659940125,
+    "rmse": 6.971759753871397,
+    "bias": 6.4854042659940125,
+    "n_test": 62.0
+  },
+  "feature_columns": [
+    "baseline_lst_c",
+    "ndvi",
+    "ndbi",
+    "impervious_fraction",
+    "tree_canopy_fraction",
+    "built_density",
+    "albedo_proxy",
+    "population_density_proxy",
+    "built_surface_proxy",
+    "viirs_nightlights",
+    "day_of_year"
+  ],
+  "residual_quantiles": {
+    "q10": 3.746571072813811,
+    "q90": 9.888087438509238
+  }
+}

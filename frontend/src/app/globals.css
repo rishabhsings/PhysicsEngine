@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mapbox GL Draw backwards compatibility for MapLibre GL V3/V4 */
+.mapboxgl-ctrl-group {
+  border-radius: 4px;
+  background: #fff;
+}
+.mapboxgl-ctrl-group:not(:empty) {
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+}
+.mapboxgl-ctrl {
+  clear: both;
+  pointer-events: auto;
+  transform: translate(0,0);
+}
+.mapboxgl-ctrl-top-left .mapboxgl-ctrl {
+  margin: 10px 0 0 10px;
+  float: left;
+}
+.mapboxgl-ctrl-group button {
+  width: 29px;
+  height: 29px;
+  display: block;
+  padding: 0;
+  outline: none;
+  border: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+}
+.mapboxgl-ctrl-group button+button {
+  border-top: 1px solid #ddd;
+}
