@@ -612,15 +612,22 @@ export default function Home() {
 
         {backendStatus && (
           <div
-            className={`p-2 rounded-lg border text-[10px] leading-tight ${
+            className={`relative p-3 rounded-lg border text-xs leading-relaxed ${
               isDarkMode
                 ? 'bg-amber-500/10 border-amber-500/20 text-amber-300'
                 : 'bg-amber-50 border-amber-200 text-amber-800'
             }`}
           >
-            <span className="font-bold uppercase tracking-wide">
-              {backendStatus.kind === 'tiles' ? 'Map Data Offline:' : 'Simulation Offline:'}
-            </span>{' '}
+            <button 
+              onClick={() => setBackendStatus(null)}
+              className="absolute top-2 right-2 opacity-50 hover:opacity-100"
+              title="Dismiss warning"
+            >
+              ✕
+            </button>
+            <span className="font-bold uppercase tracking-wide block mb-1">
+              {backendStatus.kind === 'tiles' ? 'Map Data Offline' : 'Simulation Offline'}
+            </span>
             {backendStatus.message}
           </div>
         )}
