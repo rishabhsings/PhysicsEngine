@@ -200,7 +200,7 @@ export default function Home() {
         });
         setBackendStatus({
           kind: 'tiles',
-          message: 'Thermal tiles are unavailable. Start the FastAPI backend and ensure NEXT_PUBLIC_API_URL points to it.'
+          message: 'Thermal Map Disabled: The backend is connected, but Google Earth Engine is not authenticated on Render. Add EE_SERVICE_ACCOUNT and EE_PRIVATE_KEY_JSON to Render to enable satellite imagery.'
         });
         console.warn('Thermal tile fetch failed.', err);
       }
